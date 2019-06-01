@@ -5,38 +5,241 @@
 	<title>Reto Sprite</title>
 	<style>
 		body {
-			background-color:#0BD531;
+			background-color:#1A8D07;
 			
 		}
 		section.caja1 {
 			background: url(imgs/spriteweb.png);
 			background-color: #fff;
-			height: 200px;
-			margin: 20px auto;
+			background-position: -0px -5px;
+			height: 180px;
+			margin: 40px ;
 			width: 280px;
-			display:inline-block;
+			display: inline-block;
+
+		}
+		h2.caja a {
+			background-color:#62D762;
+			color: #fff;
+			display: inline-block;
+			list-style: none;
+			padding: 5px;
+			margin: 0px 10px;
+			text-align: center;
+			width: 120px;
+			float: right;
+			margin-right: 100px;
+			margin-top: 100px;
+	
+		}
+		section.caja2 {
+			background: url(imgs/spriteweb.png)no-repeat;
+			background-color: #fff;
+			background-position:-465px -208px;
+			height: 215px;
+			margin:40px;
+			width: 1200px;
 
 
 		}
-		section.cajapadre div.h1 {
-			display:inline-block;
-			width: 100px;
-			font-sinze: 2em;
-			text-align: auto;
+		section.caja2 p {
+			text-align: right;
+			font-size: 1em;
 
 		}
-		
+		section.caja3 {
+			background: url(imgs/spriteweb.png)no-repeat;
+			background-color: #fff;
+			background-position:-465px 1px;
+			height: 215px;
+			margin:40px;
+			width: 1200px;
 
+		}
+		section.caja4 {
+			background: url(imgs/spriteweb.png)no-repeat;
+			background-color: #fff;
+			background-position:-465px -208px;
+			height: 215px;
+			margin:40px;
+			width: 1200px;
+		}
+		section.caja2 #cajatexto{
+			text-align: center;
+			width: 700px;
+			margin-left: 400px;
+			border:2px solid #fff;
+			height: 200px;
+		} 
+		#cajatexto p,
+		#cajatexto1 p,
+		#cajatexto2 p {
+			text-align: justify;
+		}
+		section.caja3 #cajatexto1 {
+			text-align: center;
+			width: 700px;
+			margin-left: 400px;
+			border:2px solid #fff;
+			height: 200px;
+		}
+		section.caja4 #cajatexto2 {
+			text-align: center;
+			width: 700px;
+			margin-left: 400px;
+			border:2px solid #fff;
+			height: 200px;
+		}
+		section#caja5 {
+			background-color: #fff;
+			height: 215px;
+			margin:40px;
+			width: 90%;
+		}
+		section#caja5 section{
+			display: inline-block;
+		}
+		#caja6, #caja7, #caja8 {
+			margin: 12px;
+			margin-left: 28px;
+			width: 350px;
+			height: 190px;
+			display: inline-block;
+			padding: 2px;
+			vertical-align: top
+		}
+		#caja6 h3{
+			line-height: 1px;
+		}
+		#caja7 p,
+		#caja8 p {
+			text-align: justify;
+		}
+		#caja6 h2,
+		#caja7 h2,
+		#caja8 h2{
+			background-color: #62D762;
+			color: #fff;
+			text-align: center;
+		}
+		#caja10 {
+			background-color: #62d762;
+			width: 90%;
+			height: 50px;
+			margin: 40px;
+		}
+		#derechos {
+			border: 1px solid #62d762;
+			width: 300px;
+			height: 40px;
+			margin: 0px auto;
+		}
+		#derechos h3{
+			text-align: center;
+			font-family: arial;
+		}
+		#caja9{
+			background-color: #fff;
+			height: 215px;
+			margin:40px;
+			width: 90%;
+		}
+		#img1,
+		#img2,
+		#img3 {
+			border: 1px solid #fff;
+			display: inline-block;
+			margin: 10px;
+			margin-left: 28px;
+			width: 350px;
+			height: 175px;
+			padding: 2px;
+			vertical-align: top
+		}
+		#img1{
+			width: 300px;
+		}
+		#img1 {
+			background-image: url(imgs/spriteweb.png);
+			background-position: 6px -240px;
+			background-size: 900px;
+		}
+		#img2 {
+			background-image: url(imgs/spriteweb.png);
+			background-position: -450px -930px;
+			background-size: 1500px;
+		}
+		#img3 {
+			background-image: url(imgs/spriteweb.png);
+			background-position: -456px -419px;
+		}
 	</style>
 </head>
 <body>
-	<section class="caja1"></section>
-	 <section class="cajapadre">
-		<h1>
-		<a href="">Inicio</a>
-		<a href="">Nosotros</a>
-		<a href="">Contacto</a></h1>
-		
-
+		<section class="cajapadre"></section>
+		<h2 class="caja">
+				<section class="caja1"></section>
+			
+			<a href="https://www.facebook.com/Sprite/">Facebook</a>
+			<a href="http://www.sprite.lat/es/co/home/">Nosotros</a>
+			<a href="#caja6">Contacto</a>
+			<a href="">Inicio</a>
+		</h2>
+	<div id="cajas">
+		<section class="caja2">
+			<section id="cajatexto">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, alias quisquam eos vel atque excepturi asperiores repudiandae expedita voluptatibus architecto error. Quidem et, fugit doloribus corrupti atque, ea optio dicta soluta molestiae obcaecati, dolorem laudantium recusandae maxime, unde ipsum facilis temporibus ad id! Provident enim, perferendis commodi sapiente qui eveniet, corporis illum esse dicta autem maxime minima adipisci odit eum sunt assumenda eligendi deserunt eius architecto. Harum nesciunt, ipsam labore voluptates doloribus quidem fugit eos alias saepe dolorum, quisquam nisi voluptatibus consectetur quasi provident repellendus magnam architecto necessitatibus, a pariatur accusamus vel laborum. Itaque, similique necessitatibus incidunt vel officia enim pariatur nobis dolore facilis et temporibus iste illum nesciunt. Nobis quasi, blanditiis pariatur architecto quae nam esse quidem iure alias!
+				</p>
+			</section>
+			
+		</section>
+		<section class="caja3">
+			<section id="cajatexto1">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sapiente itaque cumque facere nulla fugiat porro officia quibusdam minima sit, aut voluptates dolore debitis corporis quasi modi vitae, nesciunt, facilis eum autem! Eligendi dignissimos atque officiis nisi quos, aliquid doloribus inventore sit impedit molestias ex, veritatis architecto, recusandae, facilis fuga beatae pariatur eveniet distinctio dicta. Modi inventore eveniet voluptate quo similique quasi perferendis commodi quidem hic ad odit sequi, officia dolor reiciendis dolorum. Asperiores hic, reprehenderit architecto consequuntur facilis possimus accusamus optio, provident itaque iure debitis voluptate autem vitae, sed magni voluptatum quia fuga delectus sequi unde animi distinctio recusandae placeat deleniti! Autem corporis quis quos aut numquam maiores, quo, unde sit eaque eveniet. Beatae nam magnam neque nemo est!
+			</p>
+			</section>
+		</section>
+		<section class="caja4">
+			<section id="cajatexto2">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptates dolorum, eius possimus a et aspernatur ab error veritatis, tempore sequi rerum porro iusto molestiae natus pariatur praesentium, cupiditate nemo numquam dolorem. Debitis perspiciatis quisquam soluta hic aliquid ullam tenetur dolore voluptatum esse a, vero, placeat autem incidunt quidem voluptate, asperiores temporibus ad accusantium sed quaerat quis tempora itaque quam. Numquam maiores commodi sapiente. Doloribus aperiam quos cumque dolore! Ratione, dicta quo laudantium voluptas earum dolorem asperiores iusto ut reprehenderit ex saepe mollitia, suscipit expedita placeat consequuntur beatae veniam aliquid cumque itaque corporis aut debitis. Temporibus at non ipsum nemo delectus eum veniam reiciendis aliquid doloremque, facere omnis ea sint qui quisquam error. Ea distinctio exercitationem veritatis animi alias velit.
+			</p>
+			</section>
+		</section>
+		<section id="caja5">
+			<section id="caja6">
+				<h2>CONTACTO</h2>
+				<h3>Teléfono: 8880000</h3>
+				<h3>Dirección: Calle xx #xx-xx</h3>
+				<h3>Fax: 987653(76)</h3>
+				<h3>Ciudad: XXXXXXX-YYYY</h3>
+				<h3>Email: example@example.com</h3>
+				<h3>Linea: 01800.....</h3>
+			</section>
+			<section id="caja7">
+				<h2>SERVICIOS</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, minus ullam possimus! Explicabo accusamus debitis sit provident odit quia ipsum, id quas quae, iusto aut quaerat enim earum culpa iste.</h3>
+				
+			</section>
+			<section id="caja8">
+				<h2>PRODUCTOS</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, minus ullam possimus! Explicabo accusamus debitis sit provident odit quia ipsum, id quas quae, iusto aut quaerat enim earum culpa iste.</h3>
+				
+			</section>
+		</section>
+		<section id="caja9">
+			<div id="img1"></div>
+			<div id="img2"></div>
+			<div id="img3"></div>
+		</section>
+		<section id="caja10">
+			<div id="derechos">	
+				<h3><strong><em>CopyRight &copy; 2019</em></strong></h3>
+			</div>	
+		</section>
+	</div>
+	
 </body>
 </html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Reto(Media Queries)</title>
+	<style>
+		body {
+			font-family: motter-tektura;
+			font-size: 14px;
+			margin:20px;
+		}
+		main {
+			height: 1000px;
+			margin:0px auto;
+			width:1225px;
+		}
+		header div.logo {
+			background: url(imgs/ReebokSlogan.webp) no-repeat center;
+			background-size: contain;
+			height: 250px;
+			margin:20px;
+		}
+		section.boxes div {
+			
+			display: inline-block;
+			height: 260px;
+			margin-right:30px;
+			position: relative;
+			width: 260px;
+			transition: all;
+			box-shadow: 0px 0px 5px #000;
+		}
+		section.boxes div:first-child {
+			margin-left: 30px;
+		}
+		section.boxes div:last-child {
+			margin-left: 10px;
+		}
+		section.boxes div:nth-child(1){
+			background:url(imgs/rebooktenis.webp);
+			background-size: cover;
+		}
+		section.boxes div:nth-child(2){
+			background:url(imgs/rebooktenis3.jpg);
+			background-size: cover;
+		}
+		section.boxes div:nth-child(3){
+			background:url(imgs/rebooktenis2.jpg);
+			background-size: cover;
+		}
+		section.boxes div:nth-child(4){
+			background:url(imgs/nylon.jpg);
+			background-size: cover;
+		}
+		section.boxes div:hover {
+			transform: translateY(20px);
+		}
+		section.boxes div p {
+			background-color: rgba(0,0,0,.6);
+			color:rgba(255,255,255,.8);
+			bottom:0px;
+			margin:0px;
+			padding: 20px;
+			position: absolute;
+			width: 220px;
+		}
+		section.caja2 {
+			width: 1150px;
+			height: 280px;
+			margin: 30px auto;
+			padding: 5px;
+		}
+		section.caja3 {
+			width: 1155px;
+			height: 280px;
+			margin: 30px auto;
+			padding: 5px;
+		}
+		.caja2 div.box5 {
+			background: url(imgs/frase2.jpg) no-repeat;
+			background-size: 560px;
+			background-position:-82px -45px;
+			width: 31%;
+			height: 230px;
+			display: inline-block;
+			margin-bottom: 5px;
+			margin-left: 15px;
+		}
+		.caja3 div.box6 {
+			background: url(imgs/frase2.jpg) no-repeat;
+			background-size: 560px;
+			background-position: -82px -45px;
+			width: 31%;
+			height: 230px;
+			display: inline-block;
+			margin: 5px;
+			margin-left: 15px;
+		}
+		div.texto {
+			color:rgba(0,0,0,.4);
+			vertical-align: top;
+			width: 65%;
+			height: 250px;
+			display: inline-block;
+			margin-top: 0px auto;
+			margin-left: 10px;
+			text-align: justify;
+			font-family: motter-tektura;
+			font-size: 18px;
+		}
+		div.texto h1 {
+			color:black;
+			font-family:motter-tektura;
+			font-size: 1.8em;
+			text-align: center;
+		}
+		@font-face {
+			font-family: motter-tektura;
+			src:url(fonts/motter-tektura.ttf);
+		}
+		section.caja2 div:hover {
+			transform: translateY(30px);
+		}
+		section.caja3 div:hover {
+			transform: translateY(30px);
+		}
+		@media (max-width: 1024px){
+			main {
+				width: 640px;
+				height: 100%;
+			}
+			main header div.logo {
+			background: url(imgs/sloganrebook2.jpeg) no-repeat center;
+			background-size: contain;
+			height: 250px;
+			margin:20px;
+		}
+			
+			main section.boxes div {
+				width: 260px;
+				height: 230px;
+				margin:6px;
+				background-size: cover;
+			}
+			main section.caja2 {
+				height: 450px;
+				width: 90%;
+				display: inline-block;
+			}
+			main section.caja2 div p {
+				width: 300px;
+				margin: 0px auto;
+			}
+			main section.caja2 div.box5 {
+				background: url(imgs/bemorehuman.jpg) no-repeat center;
+				width: 170px;
+				height: 350px;
+				margin:0px 0px 0px 10px;
+			}
+
+			main section.caja3 {
+				height: 470px;
+				width: 90%;
+				display: inline-block;
+			}
+			main section.caja3 div p {
+				width: 300px;
+				margin: 0px auto;
+			}
+			main section.caja3 div.box6 {
+				background: url(imgs/bemorehuman.jpg) no-repeat center;
+				width: 170px;
+				height: 350px;
+				margin:0px 0px 0px 10px;
+			}
+			/**-------------------**/
+			@media (max-width: 720px) {
+				main {
+				width: 400px;
+				height: 3130px;
+				font-size: 14px;
+			}
+			main header div.logo {
+			background: url(imgs/ReebokDelta.jpg) no-repeat center;
+			background-size: contain;
+			height: 250px;
+			margin:20px;
+		}
+			main section.boxes div {
+				width: 350px;
+				margin: 8.5px ;
+				height: 285px;
+				background-size: cover;
+			}
+			main section.caja2 {
+				height: 700px;
+				width: 90%;
+				display: inline-block;
+				margin:0px 0px 0px 10px;
+			}
+			main section.caja2 div p {
+				width: 290px;
+				
+			}
+			main section.caja2 div.box5 {
+				background: url(imgs/bemorehuman.jpg) no-repeat center;
+				position: relative;
+				height: 300px;
+				width: 360px;
+				margin: 0px 10px 0px 10px;
+				
+			}
+
+			main section.caja3 {
+				height: 850px;
+				width: 90%;
+				display: inline-block;
+				margin:0px 10px 0px 10px;
+			}
+			main section.caja3 div p {
+				width: 290px;
+				
+			}
+			main section.caja3 div.box6 {
+				background: url(imgs/bemorehuman.jpg) no-repeat center;
+				width: 360px;
+				height: 300px;
+				
+			}
+
+			}
+
+			}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<div class="logo"></div>
+		</header>
+		<section class="boxes">
+		<div class="box1">
+			<p>Las Reebok Aztrek son una especie de heroe anonimo de las zapatillas de los ’90s.</p>
+		</div>
+		<div class="box2">
+			<p>Reebok Classic Leather: El clásico que nunca muere, que nunca pasa de moda.</p>
+		</div>
+		<div class="box3">
+			<p>Los Reebok Pump Retro son un rescate de los estilos de zapatos populares del pasado.</p>
+		</div>
+		<div class="box4">
+			<p>Las Reebok Classic Nylon se encuentran tanto para hombre como  para mujer.</p>
+		</div>
+		</section>
+		<section class="caja2">
+			<div class="box5"></div>
+			<div class="texto">
+				<h1>¿Que es reebok?</h1>
+				<p>Reebok International Limited es una productora estadounidense de zapatillas deportivas, ropa, y accesorios, subsidiaria del grupo aleman Adidas. El nombre proviene de la palabra afrikaans rhebok, un tipo de antilope africano.</p>
+			</div>
+		</section>
+		<section class="caja3">
+			<div class="box6"></div>
+			<div class="texto">
+				<h1>Reebok Motivacion</h1>
+				<p>Vive en armonia: lo mejor que puedes hacer es rodearte de un ambiente positivo o crearlo tu misma. Tomate las cosas con calma, mira el lado positivo de las cosas siempre y contagia a tu entorno de esa actitud. Disfruta de los momentos en familia y aprecialos. Tambien puede ayudarte hacer algun deporte o ejercicio que te relaje y compartir ese espacio con las personas que quieres.</p>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

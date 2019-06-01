@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Media Queries</title>
+	<style>
+		* {
+			transition: all 0.5s
+		}
+		body {
+			background-color: #013571;
+			font:16px Tahoma;
+		}
+		section.main {
+			border:10px solid #0177db;
+			color:rgba(255,255,255, .6);
+			margin:20px auto;
+			padding: 20px;
+			width: 960px;
+		}
+		section.main div.logo {
+			background:url(imgs/pepsi01.png) no-repeat;
+			background-size: contain;
+			margin: 0px auto;
+			height: 300px;
+			width: 780px;
+		}
+		
+		section.main h1 span.r2,
+		section.main h1 span.r3 {
+			display: none;
+		}
+
+		@media (max-width: 1024px) {
+			section.main {
+			width: 640px;
+			}
+			section.main h1 span.r1,
+			section.main h1 span.r3 {
+			display: none;
+		}
+			section.main h1 span.r2 {
+			display: inline;
+		}
+			section.main div.logo { 
+				background: url(imgs/pepsi02.png)no-repeat center;
+				height: 340px;
+				width: 340px;
+			}
+		
+		@media (max-width: 720px) {
+			section.main  {
+				width: 440px;
+			}
+				section.main h1 span.r1,
+				section.main h1 span.r2 {
+			display: none;
+		}
+			section.main h1 span.r3{
+			display: inline;
+		}
+			section.main div.logo { 
+				background: url(imgs/pepsi03.png)no-repeat center;
+				height: 340px;
+				width: 340px;
+		}
+	</style>
+</head>
+<body>
+	<section class="main">
+		<div class="logo"></div>
+		<h1>Media Queries
+			<span class="r1">(1024px)</span>
+			<span class="r2">(720px)</span>
+			<span class="r3">(440px)</span>
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident quidem, possimus, dolorem labore rem repellat alias omnis porro temporibus dolores odit dolor expedita quam voluptatem voluptate aliquid atque. Sapiente corporis aliquam laborum quia, aspernatur quibusdam. Exercitationem vel aliquid nesciunt! Asperiores cupiditate esse dolorum eveniet enim qui voluptas minus impedit hic cum blanditiis accusamus, dignissimos, adipisci molestiae nostrum commodi laborum corporis quaerat temporibus tenetur cumque quos! Iure fuga, dicta nulla numquam unde amet doloribus similique dolores. Vitae similique harum quas ad ab, vero? Debitis maiores accusamus rerum facilis soluta iusto illo cumque quisquam culpa, earum, temporibus expedita repellat in, iste dolore nostrum sit est! Vitae necessitatibus temporibus eaque aspernatur quasi! Soluta dolor unde qui earum! Ab labore laboriosam, ducimus rem deleniti quasi quod ut alias, aliquid suscipit soluta repellat odio quidem mollitia ipsa quaerat incidunt eius accusamus, officia reprehenderit necessitatibus nisi perspiciatis. Vero provident hic sequi, sapiente quasi illo illum praesentium quis dolorem. Dolorem iste totam ipsum, dolorum laborum alias! Sapiente consequuntur nesciunt sunt doloremque accusamus animi odit ipsum, necessitatibus est explicabo ipsa mollitia vero corrupti reprehenderit recusandae reiciendis aliquid dolorem architecto quos at dignissimos repellat! Officia quos modi, illum, est veniam nisi itaque, quibusdam blanditiis consequuntur alias consequatur quia.
+		</p>
+	</section>
+</body>
+</html>
