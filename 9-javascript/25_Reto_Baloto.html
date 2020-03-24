@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reto Aleatorio</title>
+    <style>
+    body{
+      background: url(imgs/bg_baloto.jpg) no-repeat center;
+      margin: 0px;
+      height: 100vh;
+    }
+    h1{
+      color: #ee0e0A;
+      text-align: center;
+      font-family: Arial;
+    }
+    img{
+      display: block;
+      margin: 40px auto;
+      width: 250px;
+    }
+    li{
+      left:260px;
+    }
+    ul.style{
+      list-style: none;
+      margin: 80px;
+      padding: 0px;
+      width: 740px;
+    }
+    ul.balls li.ball{
+      background: transparent url(imgs/bg_balota1.png) no-repeat center;
+      display: inline-block;
+      height: 106px;
+      font: 3em Arial;
+      margin: 0px 10px;
+      position: relative;
+      text-align: center;
+      top: -424px;
+      vertical-align: top;
+      width: 100px;
+    }
+    ul.balls li.balls{
+      background-image: url(imgs/bg_balota2.png);
+    }
+    button#btnPlay {
+      background-color: #ee0e0A;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      color:#fff;
+      font-size: 1.2em;
+      display: block;
+      margin: 0px auto;
+      padding: 15px;
+      transition: all 0.5s ease-in;
+      width: 200px;
+    }
+    button#btnPlay:hover{
+      background-color: #9f0e0a;
+      color:#ff0;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    ul.balls li.animBall{
+      animation: animBall 1s 1 forwards;
+    }
+    @keyframes animBall {
+      0% {top: -424px; }
+      40%{top: 0px; }
+      50%{top: -80px;}
+      60%{top: 0px; }
+      70%{top: -60px; }
+      80%{top: 0px; }
+      90%{top: -40px;}
+      100%{top: 0px; }
+    }
+
+
+
+
+  </style>
+
+  </head>
+  <body>
+    <main>
+      <h1>Reto Baloto</h1>
+      <img src="imgs/logo_baloto.png" alt="">
+      <br>
+      <ul class="balls">
+        <li class="ball ball1">1</li>
+        <li class="ball ball2">2</li>
+        <li class="ball ball3">3</li>
+        <li class="ball ball4">4</li>
+        <li class="ball ball5">5</li>
+        <li class="ball balls">6</li>
+      </ul>
+      <button id="btnPlay">JUGAR</button>
+      
+    </main>
+    <script>
+      //variables
+
+      var btnPlay = document.getElementById('btnPlay');
+      var balls   = document.getElementsByClassName('ball');
+
+      //eventos
+
+      btnPlay.onclick = function(){
+        for (var i=0; i <= balls.length; i++) {
+          balls[i].classList.remove('animBall');
+          balls[0].innerHTML = Math.round(Math.random()*43);
+          balls[1].innerHTML = Math.round(Math.random()*43);
+          balls[2].innerHTML = Math.round(Math.random()*43);
+          balls[3].innerHTML = Math.round(Math.random()*43);
+          balls[4].innerHTML = Math.round(Math.random()*43);
+          balls[5].innerHTML = Math.round(Math.random()*16);
+          animAllBalls();
+        }
+      }
+      //funciones
+      function animAllBalls(){
+        var cont = 0;
+        var sint = setInterval(function(){
+          if(cont <6){
+            balls[cont].classList.add('animBall');
+
+          }else{
+            clearInterval(sint);
+          }
+          cont++;
+    
+        }, 800);
+      }
+    </script>
+
+  </body>
+</html>
