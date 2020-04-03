@@ -23,3 +23,7 @@ Route::get('usuarios', function () {
 });
 //Resource
 Route::resource('users', 'UserController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
